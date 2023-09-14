@@ -25,14 +25,11 @@ int main(int argc, char *argv[]) {
 	S = r * r * pi; 
 	printf("\nDien tich hinh tron: %f",S);
 	
-	int N, i;
+	int N, tong;
 	printf("\nBai 3: ");
 	printf("\nNhap so nguyen N: ");
 	scanf("%d", &N);
-	printf("\nCac so tu 1 toi N la: ");
-	for(i = 1; i <= N; i++)
-	{
-		printf(" %d ",i);
-	}
+	tong = N*(N+1)/2;
+	printf("\nTong cac so tu 1 toi N la: %d",tong);
 	return 0;
 }
